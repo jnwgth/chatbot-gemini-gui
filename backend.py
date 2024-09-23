@@ -30,5 +30,5 @@ class ChatBot:
  
 if __name__ == "__main__":
     chatbot = ChatBot(api_key=API_KEY, project_id=PROJECT_ID)
-    response = chatbot.get_response(user_input="write a random joke")
-    print(response)
+    chat_response = chatbot.get_response(user_input="write a random joke")
+    print(chat_response)
