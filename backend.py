@@ -17,7 +17,7 @@ class ChatBot:
     def __init__(self, api_key, project_id):
         self.api_key = api_key
         genai.configure(api_key=self.api_key)
-        self.project_id = PROJECT_ID
+        self.project_id = project_id
         self.user_input = "test"
         self.model = genai.GenerativeModel('gemini-2.0-flash',
                                     generation_config=self.model_config)
